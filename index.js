@@ -4,9 +4,115 @@
 //   { name: "Alice", age: 20, score: 85, status: "active" },
 //   { name: "Bob", age: 22, score: 92, status: "inactive" },
 // ];
-// function nameStudent(arr) {
-//   console.log();
+// function
+
+//5-masala
+// const students = [
+//   { name: "Alice", age: 20, score: 85, status: "active" },
+//   { name: "John", age: 22, score: 92, status: "inactive" },
+//   { name: "Bob", age: 23, score: 88, status: "active" },
+// ];
+
+// function findJohn(students) {
+//   return students.find((element) => element.name === "John");
 // }
+// console.log(findJohn(students));
+
+//6-masala
+// const students = [
+//   { name: "Alice", age: 20, score: 80, status: "active" },
+//   { name: "Bob", age: 22, score: 92, status: "inactive" },
+//   { name: "Charlie", age: 23, score: 85, status: "active" },
+// ];
+// function findIndexElement(students) {
+//   return students.findIndex((element) => element.score > 85);
+// }
+// console.log(findIndexElement(students));
+
+//7-masala
+// const students = [
+//   { name: "Alice", age: 20, score: 85, status: "active" },
+//   { name: "Bob", age: 22, score: 92, status: "inactive" },
+//   { name: "Charlie", age: 23, score: 88, status: "active" },
+// ];
+// function findStatus(students) {
+//   return students.filter((element) => element.status == "active");
+// }
+// console.log(findStatus(students));
+
+//8-masala
+// const students = [
+//   { name: "Alice", age: 20, score: 85, status: "active" },
+//   { name: "Bob", age: 22, score: 92, status: "inactive" },
+//   { name: "Charlie", age: 17, score: 88, status: "active" },
+// ];
+// function findAgeElement(students) {
+//   return students.every((element) => element.age > 18);
+// }
+// console.log(findAgeElement(students));
+
+//9-masala
+// const students = [
+//   { name: "Alice", age: 20, score: 85, status: "active" },
+//   { name: "Bob", age: 22, score: 92, status: "inactive" },
+//   { name: "Charlie", age: 23, score: 88, status: "active" },
+// ];
+// function findScoreElement(students) {
+//   return students.some((element) => element.score > 90);
+// }
+// console.log(findScoreElement(students));
+
+//10-masala
+// const students1 = [
+//   { name: "Alice", age: 20, score: 85, status: "active" },
+//   { name: "Bob", age: 22, score: 92, status: "inactive" },
+// ];
+// const students2 = [
+//   { name: "Charlie", age: 23, score: 88, status: "active" },
+//   { name: "David", age: 21, score: 90, status: "inactive" },
+// ];
+// function concatElement(students1, students2) {
+//   return students1.concat(students2);
+// }
+// console.log(concatElement(students1, students2));
+
+//11-masala
+// const students = [
+//   { name: "Alice", age: 20, score: 85, status: "active" },
+//   { name: "Bob", age: 22, score: 92, status: "inactive" },
+//   { name: "Alice", age: 23, score: 88, status: "active" },
+// ];
+// function unikalElement(students){
+//     return students
+// }
+
+//
+// 12-masala
+// const students = [
+//   { name: "Alice", age: 20, score: 85, status: "active" },
+//   { name: "Bob", age: 22, score: 92, status: "inactive" },
+// ];
+
+// function changeObject(students) {
+//   return students.value;
+// }
+// console.log(changeObject(students));
+
+//13-masala
+const students = [
+  { name: "Alice", age: 20, score: 85, status: "active" },
+  { name: "Bob", age: 22, score: 92, status: "inactive" },
+  { name: "Charlie", age: 23, score: 88, status: "active" },
+];
+
+function takeScoreElement(students) {
+  let res = [];
+  for (iterator of students) {
+    res.push(students.score);
+  }
+  return res;
+}
+console.log(takeScoreElement(students));
 
 //String metodlariga oid masalalar.
 //1-masala
