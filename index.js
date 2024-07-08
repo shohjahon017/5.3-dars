@@ -1,3 +1,29 @@
+//
+// try {
+//   console.log(test);
+// } catch (error) {
+//   console.log(error.name);
+//   console.log(error.message);
+//   console.log(error.stack);
+// }
+
+//Throw dastur ichida o`zimiz xatolik yaratish uchun foydalaniladi.
+// function divide(a, b) {
+//   if (b === 0) {
+//     throw new Error("Division by zero is not allowed");
+//   }
+//   return a / b;
+// }
+// console.log(divide(10, 0));
+// try {
+//   const res = divide(10, 0);
+//   console.log("Result:", res);
+// } catch (error) {
+//   console.error("An error occurred:", error.message);
+// }
+
+//Spread, rest va destructing assignmentni hali o`tmadik
+
 // Massiv va obyektlarga oid masalalar.
 //1-masala
 // const students = [
@@ -5,6 +31,18 @@
 //   { name: "Bob", age: 22, score: 92, status: "inactive" },
 // ];
 // function
+
+//2-masala
+const students = [
+  { name: "Alice", age: 20, score: 85, status: "active" },
+  { name: "Bob", age: 22, score: 92, status: "inactive" },
+];
+function highScore(students) {
+  return students.forEach((element) => {
+    return element.score;
+  });
+}
+console.log(highScore(students));
 
 //5-masala
 // const students = [
@@ -99,20 +137,22 @@
 // console.log(changeObject(students));
 
 //13-masala
-const students = [
-  { name: "Alice", age: 20, score: 85, status: "active" },
-  { name: "Bob", age: 22, score: 92, status: "inactive" },
-  { name: "Charlie", age: 23, score: 88, status: "active" },
-];
+// const students = [
+//   { name: "Alice", age: 20, score: 85, status: "active" },
+//   { name: "Bob", age: 22, score: 92, status: "inactive" },
+//   { name: "Charlie", age: 23, score: 88, status: "active" },
+// ];
 
-function takeScoreElement(students) {
-  let res = [];
-  for (iterator of students) {
-    res.push(students.score);
-  }
-  return res;
-}
-console.log(takeScoreElement(students));
+// function takeScoreElement(students) {
+//   let res = [];
+//   for (iterator of students) {
+//     res.push(students.score);
+//   }
+//   return res;
+// }
+// console.log(takeScoreElement(students));
+
+//14-masala
 
 //String metodlariga oid masalalar.
 //1-masala
